@@ -13,6 +13,9 @@
 		0321F2D520AAB716006B710A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321F2D420AAB716006B710A /* Assets.xcassets */; };
 		0321F2D820AAB716006B710A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0321F2D620AAB716006B710A /* LaunchScreen.storyboard */; };
 		0321F2DB20AAB716006B710A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321F2DA20AAB716006B710A /* main.m */; };
+		0321F2E320AAB734006B710A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321F2E220AAB734006B710A /* Person.m */; };
+		032AAB6720AABB4E0042C6C9 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AAB6520AABB4E0042C6C9 /* ThreadViewController.m */; };
+		032AAB6820AABB4E0042C6C9 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032AAB6620AABB4E0042C6C9 /* ThreadViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		0321F2D720AAB716006B710A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0321F2D920AAB716006B710A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0321F2DA20AAB716006B710A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0321F2E120AAB734006B710A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0321F2E220AAB734006B710A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		032AAB6420AABB4E0042C6C9 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		032AAB6520AABB4E0042C6C9 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		032AAB6620AABB4E0042C6C9 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 		0321F2CA20AAB714006B710A /* MultiThread */ = {
 			isa = PBXGroup;
 			children = (
+				032AAB6320AABB070042C6C9 /* GCD */,
+				032AAB6220AABAFB0042C6C9 /* NSOperation */,
+				032AAB6120AABAEF0042C6C9 /* NSThread */,
+				032AAB6020AABAE20042C6C9 /* Model */,
 				0321F2CB20AAB714006B710A /* AppDelegate.h */,
 				0321F2CC20AAB714006B710A /* AppDelegate.m */,
 				0321F2CE20AAB714006B710A /* ViewController.h */,
@@ -69,6 +81,39 @@
 				0321F2DA20AAB716006B710A /* main.m */,
 			);
 			path = MultiThread;
+			sourceTree = "<group>";
+		};
+		032AAB6020AABAE20042C6C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0321F2E120AAB734006B710A /* Person.h */,
+				0321F2E220AAB734006B710A /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		032AAB6120AABAEF0042C6C9 /* NSThread */ = {
+			isa = PBXGroup;
+			children = (
+				032AAB6420AABB4E0042C6C9 /* ThreadViewController.h */,
+				032AAB6520AABB4E0042C6C9 /* ThreadViewController.m */,
+				032AAB6620AABB4E0042C6C9 /* ThreadViewController.xib */,
+			);
+			path = NSThread;
+			sourceTree = "<group>";
+		};
+		032AAB6220AABAFB0042C6C9 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		032AAB6320AABB070042C6C9 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032AAB6820AABB4E0042C6C9 /* ThreadViewController.xib in Resources */,
 				0321F2D820AAB716006B710A /* LaunchScreen.storyboard in Resources */,
 				0321F2D520AAB716006B710A /* Assets.xcassets in Resources */,
 				0321F2D320AAB714006B710A /* Main.storyboard in Resources */,
@@ -143,6 +189,8 @@
 			files = (
 				0321F2D020AAB714006B710A /* ViewController.m in Sources */,
 				0321F2DB20AAB716006B710A /* main.m in Sources */,
+				032AAB6720AABB4E0042C6C9 /* ThreadViewController.m in Sources */,
+				0321F2E320AAB734006B710A /* Person.m in Sources */,
 				0321F2CD20AAB714006B710A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
