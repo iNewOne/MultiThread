@@ -16,6 +16,8 @@
 		0321F2E320AAB734006B710A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321F2E220AAB734006B710A /* Person.m */; };
 		032AAB6720AABB4E0042C6C9 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032AAB6520AABB4E0042C6C9 /* ThreadViewController.m */; };
 		032AAB6820AABB4E0042C6C9 /* ThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032AAB6620AABB4E0042C6C9 /* ThreadViewController.xib */; };
+		033DCDA420ABFF27002E7486 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033DCDA220ABFF27002E7486 /* GCDViewController.m */; };
+		033DCDA520ABFF27002E7486 /* GCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033DCDA320ABFF27002E7486 /* GCDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,9 @@
 		032AAB6420AABB4E0042C6C9 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		032AAB6520AABB4E0042C6C9 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		032AAB6620AABB4E0042C6C9 /* ThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadViewController.xib; sourceTree = "<group>"; };
+		033DCDA120ABFF27002E7486 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		033DCDA220ABFF27002E7486 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		033DCDA320ABFF27002E7486 /* GCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,9 @@
 		032AAB6320AABB070042C6C9 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				033DCDA120ABFF27002E7486 /* GCDViewController.h */,
+				033DCDA220ABFF27002E7486 /* GCDViewController.m */,
+				033DCDA320ABFF27002E7486 /* GCDViewController.xib */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 				0321F2D820AAB716006B710A /* LaunchScreen.storyboard in Resources */,
 				0321F2D520AAB716006B710A /* Assets.xcassets in Resources */,
 				0321F2D320AAB714006B710A /* Main.storyboard in Resources */,
+				033DCDA520ABFF27002E7486 /* GCDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0321F2D020AAB714006B710A /* ViewController.m in Sources */,
+				033DCDA420ABFF27002E7486 /* GCDViewController.m in Sources */,
 				0321F2DB20AAB716006B710A /* main.m in Sources */,
 				032AAB6720AABB4E0042C6C9 /* ThreadViewController.m in Sources */,
 				0321F2E320AAB734006B710A /* Person.m in Sources */,

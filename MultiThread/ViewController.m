@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Person.h"
 #import "ThreadViewController.h"
+#import "GCDViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -74,7 +75,14 @@
     if (indexPath.row == 0) {
         ThreadViewController *vc = [[ThreadViewController alloc]initWithNibName:@"ThreadViewController" bundle:nil];
         [self.navigationController pushViewController:vc animated:YES];
-        
+    }
+    if (indexPath.row == 2) {
+//        GCDViewController *vc = [[GCDViewController alloc]initWithNibName:@"GCDViewController" bundle:nil];
+//        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if (indexPath.row == 2) {
+        GCDViewController *vc = [[GCDViewController alloc]initWithNibName:@"GCDViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
