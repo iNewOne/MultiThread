@@ -10,6 +10,7 @@
 #import "Person.h"
 #import "ThreadViewController.h"
 #import "GCDViewController.h"
+#import "OperationViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /**
     self.person = [[Person alloc]init];
     [NSThread detachNewThreadSelector:@selector(sayHello:) toTarget:self.person withObject:@"Jim"];
     //崩溃，self没有sayHello方法
@@ -35,6 +37,7 @@
     //崩溃，self没有sayHello方法
     //    NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(sayHello:) object:@"Sam"];
     [thread start];
+     */
     
 }
 
@@ -76,9 +79,9 @@
         ThreadViewController *vc = [[ThreadViewController alloc]initWithNibName:@"ThreadViewController" bundle:nil];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    if (indexPath.row == 2) {
-//        GCDViewController *vc = [[GCDViewController alloc]initWithNibName:@"GCDViewController" bundle:nil];
-//        [self.navigationController pushViewController:vc animated:YES];
+    if (indexPath.row == 1) {
+        OperationViewController *vc = [[OperationViewController alloc]initWithNibName:@"OperationViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     if (indexPath.row == 2) {
         GCDViewController *vc = [[GCDViewController alloc]initWithNibName:@"GCDViewController" bundle:nil];
